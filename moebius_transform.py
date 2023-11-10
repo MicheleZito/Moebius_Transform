@@ -125,6 +125,7 @@ def ImageFromPixelSubstOfMoebiusTr(image_data, W, dims, max_real, max_imag, valu
 
 
 ## OpenCV opens images in BGR, not RGB by default
+## Bilinear Interpolation checks all the 8 surrounding pixels at each point
 def Bilinear_Interpolation(input_image):
   New_Image = input_image
 
