@@ -229,7 +229,7 @@ if __name__ == "__main__":
   ## adjust values
   for i in range(W.shape[0]):
     for j in range(W.shape[1]):
-      W[i,j] = complex(W[i,j].real - min_real + 1, W[i,j].imag - min_imag + 1)
+      W[i,j] = complex(W[i,j].real - min_real, W[i,j].imag - min_imag)
 
   max_imag_ = max_imag - min_imag + 1
   max_real_ = max_real - min_real + 1
